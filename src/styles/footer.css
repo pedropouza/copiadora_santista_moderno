@@ -1,7 +1,6 @@
 footer {
     background-color: var(--color-primary-4);
     position: relative;
-    height: 300px;
 }
 
 #wave {
@@ -11,4 +10,43 @@ footer {
 #footer {
     display: flex;
     justify-content: space-around;
+}
+
+#footer > div {
+    margin: 20px;
+}
+
+#contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#schedules {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#schedules h1 {
+    font-size: 1.3rem;
+}
+
+#schedules h2 {
+    font-size: 1.2rem;
+    font-weight: 450;
+}
+
+#schedules h3 {
+    font-size: 1.05rem;
+}
+
+#schedules p {
+    font-size: 1rem;
+}
+
+#copyright {
+    text-align: center;
+    padding: 10px;
 }

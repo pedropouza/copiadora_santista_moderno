@@ -86,7 +86,7 @@ var swiper = new Swiper(".swiper", {
     effect: "coverflow",
     grabCursor: true,
     centeredSlides: true,
-    initialSlide: 2,
+    initialSlide: 0,
     speed: 600,
     loop: true,
     preventClicks: true,
