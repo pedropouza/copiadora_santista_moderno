@@ -26,7 +26,7 @@ html {
 }
 
 body {
-    background: url('/images/wallpaper.png'), linear-gradient(to bottom, var(--color-primary-1) 70%, var(--color-primary-2));
+    background: url('../images/wallpaper.png'), linear-gradient(to bottom, var(--color-primary-1) 70%, var(--color-primary-2));
     background-size: 2000px, 2000px, cover;
     background-repeat: repeat;
     min-height: 100vh;
