@@ -22,6 +22,19 @@ footer {
     gap: 15px;
 }
 
+#contact-info > p a {
+    color: var(--color-neutral-1);
+    transition: all 0.2s ease;
+    text-decoration: none;
+    background-color: var(--color-primary-2);
+    border-radius: 8px;
+    padding: 5px 10px;
+}
+
+#contact-info > p a:hover {
+    color: #a5a5a5;
+}
+
 #schedules {
     display: flex;
     flex-direction: column;
@@ -38,6 +51,19 @@ footer {
     font-weight: 450;
 }
 
+.store-open {
+    color: #11bb82;
+}
+
+.store-closed {
+    color: #bb1111;
+}
+
+.store-almost-closed {
+    color: #ec7e00;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.493);
+}
+
 #schedules h3 {
     font-size: 1.05rem;
 }
@@ -49,4 +75,13 @@ footer {
 #copyright {
     text-align: center;
     padding: 10px;
+}
+
+
+@media screen and (max-width: 700px) {
+    #footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
