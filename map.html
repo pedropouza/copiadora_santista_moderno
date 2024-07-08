@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./src/styles/styles.css">
+    <title>Copiadora Santista</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div></div>
+            <ul id="nav-list">
+                <li class="nav-item">
+                    <a href="./index.html"><i class="fa-solid fa-house"></i> Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./index.html#services"><i class="fa-solid fa-stamp"></i> Serviços</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="#como-chegar"><i class="fa-solid fa-location-dot"></i> Como Chegar</a>
+                </li>
+            </ul>
+            <button class="btn-order">Faça seu pedido</button>
+            
+            <button id="mobile-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+        
+        <div id="mobile-menu">
+            <ul id="mobile-nav-list">
+                <li class="nav-item">
+                    <a href="./index.html"><i class="fa-solid fa-house"></i> Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./index.html#services"><i class="fa-solid fa-stamp"></i> Serviços</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="#como-chegar"><i class="fa-solid fa-location-dot"></i> Como Chegar</a>
+                </li>
+            </ul>
+            <button class="btn-order">Faça seu pedido</button>
+        </div>
+    </header>
+
+    <main id="map">
+        <h1 class="title">Venha nos conhecer</h1>
+        <iframe id="google-maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7291.665896838174!2d-46.33708785925039!3d-23.966346648240748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce03054ed7d567%3A0xf69f13a6878f4d7c!2sCopiadora%20Santista!5e0!3m2!1spt-PT!2spt!4v1696166794105!5m2!1spt-PT!2spt" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </main>
+
+    <footer>
+        <img id="wave" src="src/images/footer-wave.svg" alt="Wave">
+        <div id="footer">
+            <div id="contact-info">
+                <p><a href="mailto:copiadorasantista@gmail.com"><i class="fa-solid fa-envelope"></i> copiadorasantista@gmail.com</a></p>
+                <p><a href="mailto:clientecopiadora530@gmail.com"><i class="fa-solid fa-envelope"></i> clientecopiadora530@gmail.com</a></p>
+                <p><a href="tel:+55133327-3045"><i class="fa-solid fa-phone"></i> (13) 3327-3045</a></p>
+                <p><a href="tel:+551399160-1393"><i class="fa-brands fa-whatsapp"></i> (13) 99160-1393</a></p>
+                <p><a href="https://www.google.com/maps/dir//Copiadora+Santista+Galeria+5+Avenida,+Loja+07+Av.+Ana+Costa,+530+-+Gonzaga+Santos+-+SP,+11060-002,+Brasil/@-23.96668,-46.3331611,15z/data=!4m5!4m4!1m0!1m2!1m1!1s0x94ce03054ed7d567:0xf69f13a6878f4d7c" target="_blank"><i class="fa-solid fa-location-dot"></i> Av. Ana Costa, nº 530, Loja 07 - Gonzaga - Santos/SP</a></p>
+            </div>
+                <div id="schedules">
+                    <h1><i class="fa-solid fa-clock"></i> Horário</h1>
+                    <h3><span id="open-closed"></span></h3>
+                    <h2>Segunda - Sexta</h2>
+                    <p>9h - 19h</p>
+                    <h2>Sábado</h2>
+                    <p>9h - 17h</p>
+                </div>
+        </div>
+        <div id="copyright">
+            <p>&copy; Projeto criado e estilizado por Pedro Pouza</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="src/javascript/script.js"></script>
+    <script src="src/javascript/script-map.js"></script>
+</body>
+</html>
