@@ -19,9 +19,13 @@
     font-size: 1.8rem;
 }
 
-#home .description-logo {
-    margin-top: 100px;
+#home .swiper {
+    margin-top: 50px;
     font-size: 4rem;
+    padding: 10px;
+    width: auto;
+    height: 120px;
+    user-select: none;
 }
 
 @media screen and (max-width: 900px) {
@@ -33,8 +37,7 @@
         font-size: 1.5rem;
     }
 
-    #home .description-logo {
-        margin-top: 100px;
+    #home .swiper {
         font-size: 3rem;
     }
 }

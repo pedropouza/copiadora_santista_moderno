@@ -61,6 +61,10 @@
     user-select: none;
 }
 
+.images .img-title {
+    opacity: 0;
+}
+
 .img-title {
     color: #fff;
     position: absolute;
@@ -74,7 +78,7 @@
     border-radius: 8px;
     border: 2px solid rgba(177, 177, 177, 0.4);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(3px);
     transition: all 0.5s linear;
 }
 
@@ -83,9 +87,10 @@
     font-weight: 600;
 }
 
-.swiper-slide-active .img-title {
+.swiper-slide-active .img-title, .images:hover .img-title {
     bottom: -10px;
     box-shadow: 0 20px 30px 2px var(--color-primary-4);
+    opacity: 1;
 }
 
 #swiper-pagination .swiper-pagination-bullet-active {

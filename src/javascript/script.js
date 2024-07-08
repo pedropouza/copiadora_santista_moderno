@@ -107,7 +107,7 @@ $(document).ready(function() {
         reset: true
     })
 
-    ScrollReveal().reveal('.description-logo', {
+    ScrollReveal().reveal('#home .swiper', {
         origin: 'right',
         duration: 2000,
         distance: '120%',
@@ -124,7 +124,7 @@ $(document).ready(function() {
     })
 })
 
-var swiper = new Swiper(".swiper", {
+var swiper = new Swiper("#services .swiper", {
     effect: "coverflow",
     grabCursor: true,
     centeredSlides: true,
@@ -149,5 +149,23 @@ var swiper = new Swiper(".swiper", {
         el: ".swiper-pagination",
         dynamicBullets: true
     }
+})
+
+var autoSwiper = new Swiper("#home .swiper", {
+    effect: 'coverflow',
+    coverflowEffect: {
+      rotate: 150,
+      slideShadows: false,
+    },
+    autoplay: {
+        delay: "350"
+    },
+    speed: 1200,
+    direction: "vertical",
+    loop: true,
+    slidesPerView: 1,
+    allowTouchMove: false,
+    autoHeight: true,
+    centeredSlides: true
 })
 
