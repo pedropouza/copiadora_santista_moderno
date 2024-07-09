@@ -7,13 +7,7 @@ $(document).ready(function() {
     
         const navItems = $('.nav-item')
         let activeSectionIndex = 0;
-    
-        if (scrollPosition <= 0) {
-            header.css('box-shadow', 'none')
-        } else {
-            header.css('box-shadow', '5px 1px 5px rgba(0, 0, 0, 0.1)')
-        }
-    
+
         sections.each(function(i) {
             const section = $(this) // referencia a propria sessao, e nao todas.
             const sectionTop = section.offset().top - 115   // quando essa sessao chega no top - o nav bar
@@ -28,7 +22,7 @@ $(document).ready(function() {
         navItems.removeClass('active')
         $(navItems[activeSectionIndex]).addClass('active')
 
-})
+    })
 
     ScrollReveal().reveal('.desktop-services', {
         origin: 'left',
