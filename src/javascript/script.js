@@ -1,4 +1,11 @@
 $(document).ready(function() {
+    const loader = document.getElementById('loader');
+    loader.style.opacity = '0';
+    loader.style.visibility = 'hidden';
+    setTimeout(() => {
+        loader.style.display = 'none';
+    }, 1000);
+
     $('#mobile-btn').on('click', function() {
         $('#mobile-menu').toggleClass('active')
         $('#mobile-btn').find('i').toggleClass('fa-x')
